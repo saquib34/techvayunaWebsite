@@ -187,7 +187,7 @@ div.social {
     justify-content: space-around;
     font-size: 2.4em;
     flex-direction: row;
-    margin-top: 0.5ems;
+    margin-top: 0.5em;
 }
 
 .social i:hover {
@@ -225,10 +225,36 @@ div.social {
 }
 
 @media screen and (max-width: 850px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .icons-image,
+    .about_middle_image {
+        width: 100%;
+    }
+
+    .about p {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+
     .row.primary {
         grid-template-columns: 1fr;
     }
+
     .row.secondary {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about p {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
     }
 }
